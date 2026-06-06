@@ -1,193 +1,183 @@
-```html
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>גל אינסטלציה | שירות מהיר ואמין</title>
+<title>גל אינסטלציה</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-    font-family:Arial,sans-serif;
-    background:#f5f7fa;
-    color:#222;
-    line-height:1.6;
+  font-family:Arial,sans-serif;
+  background:#f4f6f8;
+  color:#111827;
+  line-height:1.6;
 }
 
 .hero{
-    min-height:100vh;
-    background:linear-gradient(135deg,#0f172a,#1e293b);
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:30px;
+  background:linear-gradient(135deg,#0f172a,#1e3a5f);
+  color:white;
+  padding:45px 18px 35px;
+  text-align:center;
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
-}
-
-.logo{
-    font-size:4rem;
-    margin-bottom:15px;
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.12);
+  padding:8px 14px;
+  border-radius:999px;
+  margin-bottom:18px;
+  font-size:15px;
 }
 
 h1{
-    font-size:3.5rem;
-    margin-bottom:15px;
+  font-size:42px;
+  margin-bottom:10px;
 }
 
 .subtitle{
-    font-size:1.4rem;
-    opacity:.9;
-    margin-bottom:40px;
+  font-size:20px;
+  margin-bottom:25px;
 }
 
-.buttons{
-    display:flex;
-    gap:15px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-bottom:40px;
+.actions{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
 }
 
 .btn{
-    text-decoration:none;
-    padding:18px 32px;
-    border-radius:12px;
-    font-size:1.2rem;
-    font-weight:bold;
-    transition:.2s;
+  display:block;
+  width:100%;
+  max-width:310px;
+  padding:17px;
+  border-radius:12px;
+  text-decoration:none;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
 }
 
-.btn:hover{
-    transform:translateY(-2px);
+.call{background:#2563eb}
+.whatsapp{background:#22c55e}
+
+.main{
+  max-width:900px;
+  margin:-20px auto 0;
+  padding:0 16px 90px;
+}
+
+.card{
+  background:white;
+  border-radius:18px;
+  padding:24px;
+  margin-bottom:16px;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+  font-size:24px;
+  margin-bottom:12px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+.item{
+  background:#f1f5f9;
+  padding:14px;
+  border-radius:12px;
+  font-weight:bold;
 }
 
 .phone{
-    background:#2563eb;
-    color:white;
+  text-align:center;
+  font-size:28px;
+  font-weight:bold;
+  color:#2563eb;
+  margin-top:10px;
 }
 
-.whatsapp{
-    background:#25D366;
-    color:white;
+.sticky{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:white;
+  padding:10px;
+  display:flex;
+  gap:8px;
+  box-shadow:0 -4px 18px rgba(0,0,0,.15);
 }
 
-.features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:15px;
-    margin-top:30px;
+.sticky a{
+  flex:1;
+  text-align:center;
+  padding:14px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
 }
 
-.feature{
-    background:rgba(255,255,255,.08);
-    padding:20px;
-    border-radius:12px;
-    backdrop-filter:blur(5px);
+@media(max-width:600px){
+  h1{font-size:34px}
+  .subtitle{font-size:18px}
+  .grid{grid-template-columns:1fr}
+  .card{padding:20px}
 }
-
-.number{
-    margin-top:40px;
-    font-size:2rem;
-    font-weight:bold;
-}
-
-.footer{
-    background:white;
-    text-align:center;
-    padding:30px;
-    font-size:1.1rem;
-}
-
-@media(max-width:768px){
-
-h1{
-    font-size:2.3rem;
-}
-
-.subtitle{
-    font-size:1.1rem;
-}
-
-.logo{
-    font-size:3rem;
-}
-
-.number{
-    font-size:1.6rem;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
 <section class="hero">
+  <div class="badge">שירות באזור חדרה והסביבה</div>
+  <h1>גל אינסטלציה</h1>
+  <p class="subtitle">שירות מהיר, מסודר ואמין</p>
 
-<div class="container">
-
-<div class="logo">🔧</div>
-
-<h1>גל אינסטלציה</h1>
-
-<p class="subtitle">
-שירות מהיר • אמינות • מקצועיות
-</p>
-
-<div class="buttons">
-
-<a class="btn phone"
-href="tel:0545795591">
-📞 התקשר עכשיו
-</a>
-
-<a class="btn whatsapp"
-href="https://wa.me/972545795591?text=שלום%20גל,%20אשמח%20לקבל%20פרטים"
-target="_blank">
-💬 שלח וואטסאפ
-</a>
-
-</div>
-
-<div class="features">
-
-<div class="feature">✓ זמינות גבוהה</div>
-
-<div class="feature">✓ שירות מקצועי</div>
-
-<div class="feature">✓ הגעה מהירה</div>
-
-<div class="feature">✓ יחס אישי</div>
-
-</div>
-
-<div class="number">
-054-579-5591
-</div>
-
-</div>
-
+  <div class="actions">
+    <a class="btn call" href="tel:0545795591">📞 התקשר עכשיו</a>
+    <a class="btn whatsapp" href="https://wa.me/972545795591?text=שלום%20גל,%20אשמח%20לקבל%20שירות" target="_blank">💬 וואטסאפ</a>
+  </div>
 </section>
 
-<div class="footer">
-גל אינסטלציה | חדרה והסביבה
+<main class="main">
+
+  <div class="card">
+    <h2>למה לבחור בנו?</h2>
+    <div class="grid">
+      <div class="item">✓ הגעה מהירה</div>
+      <div class="item">✓ עבודה נקייה</div>
+      <div class="item">✓ יחס אישי</div>
+      <div class="item">✓ זמינות גבוהה</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>שירות מקצועי בלי סיבוכים</h2>
+    <p>
+      צריכים אינסטלטור? שלחו הודעה או התקשרו, תקבלו מענה ברור ומהיר.
+      מתאים לדירות, בתים, עסקים וועדי בתים.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>יצירת קשר</h2>
+    <p class="phone">054-579-5591</p>
+  </div>
+
+</main>
+
+<div class="sticky">
+  <a class="call" href="tel:0545795591">חיוג</a>
+  <a class="whatsapp" href="https://wa.me/972545795591?text=שלום%20גל,%20אשמח%20לקבל%20שירות" target="_blank">וואטסאפ</a>
 </div>
 
 </body>
 </html>
-```
