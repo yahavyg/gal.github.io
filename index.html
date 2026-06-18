@@ -3,10 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>גל אינסטלציה</title>
+
+<title>גל אינסטלציה | איתור ותיקון נזילות בבית פרטי באזור חדרה</title>
+<meta name="description" content="גל אינסטלציה - איתור ותיקון נזילות, מים מתחת לריצוף, פיצוץ צינור, תיקון קווי מים וסתימות בסיסיות בבתים פרטיים באזור חדרה והסביבה.">
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   font-family:Arial,sans-serif;
@@ -18,7 +24,7 @@ body{
 .hero{
   background:linear-gradient(135deg,#0f172a,#1e3a5f);
   color:white;
-  padding:45px 18px 35px;
+  padding:48px 18px 38px;
   text-align:center;
 }
 
@@ -32,12 +38,19 @@ body{
 }
 
 h1{
-  font-size:42px;
-  margin-bottom:10px;
+  font-size:40px;
+  margin-bottom:12px;
+  line-height:1.2;
 }
 
 .subtitle{
   font-size:20px;
+  margin-bottom:10px;
+}
+
+.small{
+  font-size:16px;
+  opacity:.9;
   margin-bottom:25px;
 }
 
@@ -64,9 +77,9 @@ h1{
 .whatsapp{background:#22c55e}
 
 .main{
-  max-width:900px;
+  max-width:950px;
   margin:-20px auto 0;
-  padding:0 16px 90px;
+  padding:0 16px 95px;
 }
 
 .card{
@@ -82,6 +95,11 @@ h1{
   margin-bottom:12px;
 }
 
+.card h3{
+  font-size:20px;
+  margin-bottom:8px;
+}
+
 .grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -95,12 +113,86 @@ h1{
   font-weight:bold;
 }
 
+.service{
+  border-right:5px solid #2563eb;
+}
+
+.service p{
+  margin-bottom:12px;
+}
+
+.service ul{
+  padding-right:22px;
+}
+
+.service li{
+  margin-bottom:6px;
+}
+
+.note{
+  background:#eef6ff;
+  border-right:5px solid #2563eb;
+}
+
+.warning{
+  background:#fff7ed;
+  border-right:5px solid #f97316;
+}
+
+.price-table{
+  display:grid;
+  gap:10px;
+  margin-top:14px;
+}
+
+.price-row{
+  display:grid;
+  grid-template-columns:1.4fr .8fr;
+  gap:10px;
+  align-items:center;
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:14px;
+}
+
+.price-service{
+  font-weight:bold;
+}
+
+.price{
+  color:#2563eb;
+  font-size:18px;
+  font-weight:bold;
+  text-align:left;
+  direction:ltr;
+}
+
+.disclaimer{
+  font-size:14px;
+  color:#4b5563;
+  margin-top:12px;
+}
+
 .phone{
   text-align:center;
-  font-size:28px;
+  font-size:30px;
   font-weight:bold;
   color:#2563eb;
-  margin-top:10px;
+  margin:12px 0;
+}
+
+.area-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.area-list span{
+  background:#f1f5f9;
+  border-radius:999px;
+  padding:8px 12px;
+  font-weight:bold;
 }
 
 .sticky{
@@ -113,6 +205,7 @@ h1{
   display:flex;
   gap:8px;
   box-shadow:0 -4px 18px rgba(0,0,0,.15);
+  z-index:999;
 }
 
 .sticky a{
@@ -126,57 +219,275 @@ h1{
 }
 
 @media(max-width:600px){
-  h1{font-size:34px}
+  h1{font-size:31px}
   .subtitle{font-size:18px}
   .grid{grid-template-columns:1fr}
   .card{padding:20px}
+  .price-row{grid-template-columns:1fr}
+  .price{text-align:right}
 }
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "גל אינסטלציה",
+  "telephone": "+972545795591",
+  "url": "https://yahavyg.github.io/gal.github.io/",
+  "areaServed": [
+    "חדרה",
+    "פרדס חנה כרכור",
+    "בנימינה",
+    "זכרון יעקב",
+    "קיסריה",
+    "עמק חפר",
+    "אור עקיבא"
+  ],
+  "description": "שירותי אינסטלציה, איתור ותיקון נזילות, פיצוץ צינור, תיקון קווי מים וסתימות בסיסיות בבתים פרטיים באזור חדרה והסביבה."
+}
+</script>
+
 </head>
 
 <body>
 
 <section class="hero">
-  <div class="badge">שירות באזור חדרה והסביבה</div>
-  <h1>גל אינסטלציה</h1>
-  <p class="subtitle">שירות מהיר, מסודר ואמין</p>
+  <div class="badge">שירות באזור חדרה, פרדס חנה, בנימינה, זכרון וקיסריה</div>
+  <h1>איתור ותיקון נזילות בבית פרטי</h1>
+  <p class="subtitle">מים מתחת לריצוף? פיצוץ צינור? רטיבות בקיר? בעיית קו מים?</p>
+  <p class="small">גל אינסטלציה - שירות מהיר, מסודר ואמין</p>
 
   <div class="actions">
     <a class="btn call" href="tel:0545795591">📞 התקשר עכשיו</a>
-    <a class="btn whatsapp" href="https://wa.me/972545795591?text=שלום%20גל,%20אשמח%20לקבל%20שירות" target="_blank">💬 וואטסאפ</a>
+    <a class="btn whatsapp" href="https://wa.me/972545795591?text=שלום%20גל,%20יש%20לי%20תקלה%20באינסטלציה%20ואשמח%20לשירות" target="_blank">💬 שלח תמונה בוואטסאפ</a>
   </div>
 </section>
 
 <main class="main">
 
-  <div class="card">
-    <h2>למה לבחור בנו?</h2>
-    <div class="grid">
-      <div class="item">✓ הגעה מהירה</div>
-      <div class="item">✓ עבודה נקייה</div>
-      <div class="item">✓ יחס אישי</div>
-      <div class="item">✓ זמינות גבוהה</div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>שירות מקצועי בלי סיבוכים</h2>
+  <div class="card note">
+    <h2>שירות ממוקד לבתים פרטיים</h2>
     <p>
-      צריכים אינסטלטור? שלחו הודעה או התקשרו, תקבלו מענה ברור ומהיר.
-      מתאים לדירות, בתים, עסקים וועדי בתים.
+      טיפול בתקלות אינסטלציה שדורשות בדיקה ותיקון מסודר:
+      נזילות סמויות, מים מתחת לריצוף, פיצוץ צנרת, קווי מים,
+      רטיבות בקירות, בעיות לחץ מים וסתימות בסיסיות.
     </p>
   </div>
 
   <div class="card">
+    <h2>למה לבחור בגל אינסטלציה?</h2>
+    <div class="grid">
+      <div class="item">✓ מענה מהיר באזור</div>
+      <div class="item">✓ בדיקת מקור התקלה</div>
+      <div class="item">✓ תיקון במקום כשאפשר</div>
+      <div class="item">✓ עבודה נקייה ומסודרת</div>
+    </div>
+  </div>
+
+  <div id="leak-detection" class="card service">
+    <h2>איתור נזילות</h2>
+    <p>
+      מתאים למקרים של חשבון מים גבוה, שעון מים שממשיך להסתובב,
+      רטיבות בקיר, ירידת לחץ מים או חשד לנזילה סמויה.
+    </p>
+    <ul>
+      <li>בדיקת מקור התקלה</li>
+      <li>בדיקת נזילות בצנרת מים</li>
+      <li>בדיקת לחץ מים לפי הצורך</li>
+      <li>המלצה על תיקון מתאים</li>
+    </ul>
+  </div>
+
+  <div id="under-floor" class="card service">
+    <h2>מים מתחת לריצוף</h2>
+    <p>
+      מים מתחת לריצוף יכולים להצביע על נזילה פעילה בצנרת,
+      פיצוץ בצינור או בעיה באזור חיבורי הצנרת.
+    </p>
+    <ul>
+      <li>בדיקת מקור הרטיבות</li>
+      <li>איתור נזילה ברצפה</li>
+      <li>פתיחה נקודתית לפי הצורך</li>
+      <li>תיקון צנרת מתחת לריצוף</li>
+    </ul>
+  </div>
+
+  <div id="burst-pipe" class="card service">
+    <h2>פיצוץ צינור</h2>
+    <p>
+      במקרה של פיצוץ צינור חשוב לעצור את הנזק מהר,
+      לבדוק את הקו ולבצע תיקון יציב ולא תיקון זמני.
+    </p>
+    <ul>
+      <li>תיקון פיצוץ בצנרת מים</li>
+      <li>החלפת קטע צנרת פגוע</li>
+      <li>בדיקת לחץ לאחר תיקון</li>
+      <li>טיפול בצנרת מים חמים וקרים</li>
+    </ul>
+  </div>
+
+  <div id="water-line" class="card service">
+    <h2>תיקון קו מים</h2>
+    <p>
+      שירות לקווי מים בתוך הבית ובחצר, כולל קו מים ראשי,
+      ירידת לחץ מים, נזילה בקו או צורך בהחלפת קטע צנרת.
+    </p>
+    <ul>
+      <li>תיקון קו מים ראשי</li>
+      <li>החלפת קטע צנרת</li>
+      <li>בדיקת ירידת לחץ מים</li>
+      <li>תיקון צנרת מים בבית פרטי</li>
+    </ul>
+  </div>
+
+  <div id="basic-clogs" class="card service">
+    <h2>סתימות בסיסיות</h2>
+    <p>
+      טיפול בסתימות בסיסיות ונגישות בכיור, אמבטיה, מקלחון או אסלה.
+      במקרים של קו ביוב ראשי, שורשים או צורך בביובית - תינתן המלצה לפי מצב התקלה.
+    </p>
+    <ul>
+      <li>פתיחת סתימה בסיסית</li>
+      <li>בדיקת מקור הסתימה</li>
+      <li>טיפול בסתימות נגישות</li>
+      <li>הכוונה להמשך טיפול במקרה מורכב</li>
+    </ul>
+  </div>
+
+  <div class="card warning">
+    <h2>מתי כדאי להתקשר מיד?</h2>
+    <div class="grid">
+      <div class="item">מים מתחת לריצוף</div>
+      <div class="item">רטיבות בקיר</div>
+      <div class="item">שעון מים מסתובב</div>
+      <div class="item">פיצוץ צינור</div>
+      <div class="item">ירידת לחץ מים</div>
+      <div class="item">נזילה גלויה בצנרת</div>
+    </div>
+  </div>
+
+  <div id="prices" class="card">
+    <h2>מחירון משוער</h2>
+    <p>
+      המחירים הם הערכה לעבודות נפוצות באזור חדרה והסביבה.
+      מחיר סופי נקבע לפי מצב הצנרת, גישה למקום, עומק התקלה, חציבה, חלקים וסגירה.
+    </p>
+
+    <div class="price-table">
+
+      <div class="price-row">
+        <div class="price-service">ביקור ובדיקת תקלה</div>
+        <div class="price">₪180</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">איתור מקור נזילה בסיסי</div>
+        <div class="price">₪450 - ₪990</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">איתור נזילה בבית פרטי</div>
+        <div class="price">₪1,050 - ₪1,580</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">בדיקת מים מתחת לריצוף / מקור רטיבות</div>
+        <div class="price">₪450 - ₪990</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">תיקון פיצוץ בצנרת גלויה</div>
+        <div class="price">₪360 - ₪950</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">תיקון פיצוץ בצנרת לא גלויה / מתחת לריצוף</div>
+        <div class="price">₪1,080 - ₪2,250</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">תיקון נזילה סמויה בקיר או ברצפה</div>
+        <div class="price">החל מ-₪900</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">החלפת קטע צנרת מים גלויה</div>
+        <div class="price">₪405 - ₪585</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">החלפת קטע צנרת מים סמויה</div>
+        <div class="price">₪1,080 - ₪2,250</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">החלפת קו מים ראשי - לפי מטר</div>
+        <div class="price">₪135 - ₪225 למטר</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">החלפת צנרת מים ביתית - לפי מטר</div>
+        <div class="price">₪405 - ₪630 למטר</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">בדיקת ירידת לחץ מים / שיפור זרימה</div>
+        <div class="price">₪495 - ₪990</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">פתיחת סתימה בסיסית בכיור / אמבטיה / מקלחון</div>
+        <div class="price">₪315 - ₪495</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-service">פתיחת סתימה בסיסית באסלה</div>
+        <div class="price">₪315 - ₪450</div>
+      </div>
+
+    </div>
+
+    <p class="disclaimer">
+      * המחירון משוער בלבד. ביקור בשעות חריגות, שבת/חג, גישה מורכבת, חציבה רחבה,
+      חלקים מיוחדים, סגירת ריצוף/קרמיקה, צבע או עבודות חריגות עשויים לשנות את המחיר.
+      במידה ומבוצעת עבודה במקום, ניתן לקזז את מחיר הביקור לפי שיקול בעל המקצוע.
+    </p>
+  </div>
+
+  <div id="areas" class="card">
+    <h2>אזורי שירות</h2>
+    <div class="area-list">
+      <span>חדרה</span>
+      <span>פרדס חנה כרכור</span>
+      <span>בנימינה</span>
+      <span>זכרון יעקב</span>
+      <span>קיסריה</span>
+      <span>אור עקיבא</span>
+      <span>עמק חפר</span>
+      <span>בית ינאי</span>
+      <span>מכמורת</span>
+    </div>
+  </div>
+
+  <div id="contact" class="card">
     <h2>יצירת קשר</h2>
+    <p>
+      שלחו תמונה או סרטון קצר בוואטסאפ, או התקשרו ישירות.
+    </p>
     <p class="phone">054-579-5591</p>
+
+    <div class="actions">
+      <a class="btn call" href="tel:0545795591">📞 התקשר עכשיו</a>
+      <a class="btn whatsapp" href="https://wa.me/972545795591?text=שלום%20גל,%20אני%20צריך%20שירות%20אינסטלציה%20לבית%20פרטי" target="_blank">💬 וואטסאפ</a>
+    </div>
   </div>
 
 </main>
 
 <div class="sticky">
   <a class="call" href="tel:0545795591">חיוג</a>
-  <a class="whatsapp" href="https://wa.me/972545795591?text=שלום%20גל,%20אשמח%20לקבל%20שירות" target="_blank">וואטסאפ</a>
+  <a class="whatsapp" href="https://wa.me/972545795591?text=שלום%20גל,%20אשמח%20לקבל%20שירות%20אינסטלציה" target="_blank">וואטסאפ</a>
 </div>
 
 </body>
